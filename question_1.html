@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<body>
+    <script>
+        // global scope
+
+        var m="mahaboob"  
+        let y="jani"
+        const z="hello"
+        function fn()
+        {
+            alert("working")
+            var x=100;     //    function  scope
+            if(x>1000)
+            {
+                console.log("x is greater")      //block scope
+                
+            }
+            else{
+                    //block scope
+                console.log("x is smaller")
+                console.log(y)
+                console.log(z)
+                 let h="hii"
+                 console.log(h) 
+           
+            }
+            console.log(m)
+           
+        }
+       
+        fn()
+
+        // var keyword is function scope can change its value
+        //let is a block scope can chaange its value
+        //const is a block scope variable declare with const cannot change its value 
+    </script>
+    
+</body>
+</html>
